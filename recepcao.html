@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MESP - Recepção</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-setor="recepcao">
+
+<header class="topo">
+
+    <div class="marca">
+        <div class="simbolo">M</div>
+
+        <div>
+            <h1>MESP</h1>
+            <span>CLÍNICA MÉDICA</span>
+        </div>
+    </div>
+
+    <div class="status">
+        <span class="status-bolinha" id="statusBolinha"></span>
+        <span id="statusTexto">Conectando...</span>
+    </div>
+
+</header>
+
+
+<main class="container">
+
+    <div class="cabecalho-pagina">
+
+        <div>
+            <span class="etiqueta">RECEPÇÃO</span>
+
+            <h2>Controle de chegada</h2>
+
+            <p>Cadastre os pacientes por ordem de chegada.</p>
+        </div>
+
+    </div>
+
+
+    <section class="card cadastro">
+
+        <h3>Novo paciente</h3>
+
+        <p>
+            Para entrar na fila, informe o nome do paciente.
+        </p>
+
+
+        <div class="formulario">
+
+            <input
+                type="text"
+                id="nomePaciente"
+                placeholder="Nome completo do paciente"
+                autocomplete="off"
+            >
+
+            <button
+                id="btnAdicionar"
+                onclick="adicionarPaciente()"
+            >
+                + Adicionar paciente
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <div class="titulo-fila">
+
+        <div>
+            <h3>Fila da recepção</h3>
+            <p>Pacientes por ordem de chegada</p>
+        </div>
+
+        <div class="contador">
+            <strong id="contador">0</strong>
+            <span>aguardando</span>
+        </div>
+
+    </div>
+
+
+    <div id="listaPacientes" class="lista"></div>
+
+</main>
+
+
+<footer>
+    MESP Clínica Médica • Sistema de atendimento
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="sistema.js"></script>
+
+</body>
+</html>

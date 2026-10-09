@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>MESP - Médico</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body data-setor="medico">
+
+
+<header class="topo">
+
+    <div class="marca">
+
+        <div class="simbolo">M</div>
+
+        <div>
+
+            <h1>MESP</h1>
+
+            <span>
+                CLÍNICA MÉDICA
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <div class="status">
+
+        <span
+            class="status-bolinha"
+            id="statusBolinha"
+        ></span>
+
+        <span id="statusTexto">
+            Conectando...
+        </span>
+
+    </div>
+
+</header>
+
+
+<main class="container">
+
+    <div class="cabecalho-pagina">
+
+        <div>
+
+            <span class="etiqueta">
+                MÉDICO
+            </span>
+
+            <h2>
+                Pacientes para atendimento
+            </h2>
+
+            <p>
+                Pacientes liberados pela triagem.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="aviso">
+
+        <div class="aviso-icone">
+            👨‍⚕️
+        </div>
+
+        <div>
+
+            <strong>
+                Consultório
+            </strong>
+
+            <p>
+                Finalize o paciente após concluir
+                o atendimento.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="titulo-fila">
+
+        <div>
+
+            <h3>
+                Próximos pacientes
+            </h3>
+
+            <p>
+                Atendimento por ordem de chegada
+            </p>
+
+        </div>
+
+
+        <div class="contador">
+
+            <strong id="contador">
+                0
+            </strong>
+
+            <span>
+                aguardando
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <div
+        id="listaPacientes"
+        class="lista"
+    ></div>
+
+</main>
+
+
+<footer>
+
+    MESP Clínica Médica • Sistema de atendimento
+
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<script src="sistema.js"></script>
+
+
+</body>
+
+</html>
